@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .tasks {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            .tasks button {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 20px;
+                cursor: pointer;
+                border: 1px solid black;
+                margin-top: 20px;
+            }
+
+            .tasks button:hover {
+                background-color: rgb(0, 255, 149);
+                color: black;
+                border: 1px solid black;
+            }
+
+            .skills {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 200px;
+                background-color: rgb(255, 230, 230);
+                border: 3px solid black;
+            }
+
+            .skills-list {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .skills-list li {
+                list-style: none;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .skills-list li:hover {
+                background-color: rgb(255, 0, 0);
+                color: black;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <div class="tasks">
+            <button onclick="myFunction()">Wanna Summ ! </button>
+            <button onclick="lessThan100()"> check if less than 100 </button>
+            <button onclick="toNumber()"> Convert prompt string to number </button>
+            <button onclick="createStarts()"> Create Stars </button>
+            <button onclick="sortString()"> Sort String </button>
+
+        </div>
+
+
+
+        <div class="skills">
+            <h1>Skills</h1>
+        </div>
+
+        <script src=" main.js"></script>
+
+
+
+
+    </body>
+
+</html>
