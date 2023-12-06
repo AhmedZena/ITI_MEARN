@@ -42,3 +42,11 @@ It is organized by topics and projects to showcase my learning progress and codi
 
 ### JavaScript/lab6
 - [AJAX and JSON Example](/JavaScript/lab6/index.html)
+
+
+
+
+## Contact
+- **Name**: [Ahmed Zena]
+- **Email**: [ahmedzena53.com]
+- **LinkedIn**: [Ahmed Zena](https://www.linkedin.com/in/ahmed-zena/)
