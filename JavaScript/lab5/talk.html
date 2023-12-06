@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Talk</title>
+    </head>
+
+    <body>
+
+        <form>
+            <div class="form-name">
+                <label for="name">Enter Your Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-message">
+                <label for="age">Enter Your Age:</label>
+                <input type="text" id="age" name="age">
+            </div>
+
+            <div class="form-img-radio">
+                <label for="img">Select Your Gender:</label>
+                <div>
+                    <img src="pics/1.jpg" width="100px" height="100px" />
+                    <input type="radio" name="radioImg" value="1" />
+                </div>
+                <div>
+                    <img src="pics/2.jpg" width="100px" height="100px" />
+                    <input type="radio" name="radioImg" value="2" />
+
+                </div>
+
+                <div class=" color-select">
+                    <label for="color">Select Your Favourite Color:</label>
+                    <select>
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="submit">Submit</button>
+
+        </form>
+
+        <script>
+            const form = document.querySelector( 'form' );
+            form.addEventListener( 'submit', function ( e ) {
+                e.preventDefault();
+                const name = document.querySelector( '#name' ).value;
+                const age = document.querySelector( '#age' ).value;
+                const radioImg = document.querySelector( 'input[name="radioImg"]:checked' ).value;
+                const color = document.querySelector( 'select' ).value;
+
+
+                // save nums of submit to cookies
+                let num = 1;
+                if ( document.cookie.includes( 'num' ) ) {
+                    let arrItems = document.cookie.split( '; ' ).map( item => item.split( '=' ) );
+                    let obj = {};
+                    arrItems.forEach( item => {
+                        obj[ item[ 0 ] ] = item[ 1 ];
+                    } );
+                    let { num: numValue } = obj;
+                    numValue++;
+                    num = numValue;
+                }
+                document.cookie = `num=${ num }`;
+
+
+                // save data to cookies and open another window showTalk.html
+                document.cookie = `name=${ name }`;
+                document.cookie = `age=${ age }`;
+                document.cookie = `radioImg=${ radioImg }`;
+                document.cookie = `color=${ color }`;
+                window.open( 'showTalk.html' );
+            } );
+        </script>
+
+
+
+    </body>
+
+
+
+
+
+</html>

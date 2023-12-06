@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>show Talk</title>
+    </head>
+
+    <body>
+
+
+        <script>
+
+
+            // get cookies
+            let arrItems = document.cookie.split( '; ' ).map( item => item.split( '=' ) );
+            console.log( arrItems ); // [ [ 'age', '22' ], [ 'radioImg', '1' ], [ 'color', 'red' ], [ 'name', 'ahm' ], [ 'num', '2' ] ]
+
+            let obj = {};
+            arrItems.forEach( item => {
+                obj[ item[ 0 ] ] = item[ 1 ];
+            } );
+            console.log( obj ); // { age: '22', radioImg: '1', color: 'red', name: 'ahm', num: '2' }
+
+            // get values from obj with destructuring
+            let { age: ageValue, radioImg: radioImgValue, color: colorValue, name: nameValue, num: numValue } = obj;
+            console.log( ageValue, radioImgValue, colorValue, nameValue, numValue ); // 22 1 red ahm 2
+
+            // create elements and append them to body
+            let img = document.createElement( 'img' );
+            img.src = `pics/${ radioImgValue }.jpg`;
+            img.style.width = '100px';
+            img.style.height = '100px';
+            document.body.appendChild( img );
+
+            // create div and append it to body
+            let divy = document.createElement( 'div' );
+            divy.innerHTML = `Welcome <span style="color:${ colorValue }">${ nameValue }</span> You have visited this page <span style="color:${ colorValue }">${ numValue }</span> times`;
+            document.body.appendChild( divy );
+
+
+
+        </script>
+
+    </body>
+
+</html>

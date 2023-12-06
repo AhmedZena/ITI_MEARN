@@ -85,5 +85,3 @@ function displaySkills() {
 }
 
 displaySkills();
-
-let t = document.getElementById("t");

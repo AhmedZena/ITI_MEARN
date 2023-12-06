@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            button {
+                width: 100px;
+                height: 50px;
+                margin: 10px;
+
+            }
+
+            .mainContainer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            .slideShow {
+                width: 400px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+
+            img {
+                width: 400px;
+                height: 400px;
+                margin-top: 10px;
+
+            }
+
+            #btnNext {
+                background-color: green;
+            }
+
+            #btnPrevious {
+                background-color: red;
+            }
+
+            #btnSlideShow {
+                background-color: blue;
+            }
+
+            #btnStop {
+                background-color: yellow;
+            }
+
+            #btnNext:hover {
+                background-color: darkgreen;
+            }
+
+            #btnPrevious:hover {
+                background-color: darkred;
+            }
+
+            #btnSlideShow:hover {
+                background-color: darkblue;
+            }
+
+            #btnStop:hover {
+                background-color: darkgoldenrod;
+            }
+
+            #myInput,
+            #asciiInput {
+                width: 400px;
+                height: 50px;
+                margin: 10px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            h2 {
+                margin-top: 50px;
+            }
+
+            .marbels {
+                width: 400px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .marbels img {
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h2>
+            Task 1 : Slide Show
+        </h2>
+        <div class="mainContainer">
+
+            <div class="buttonContainer">
+                <button id="btnNext">Next</button>
+                <button id="btnSlideShow">SlideShow</button>
+                <button id="btnPrevious">Previous</button>
+                <button id="btnStop">Stop</button>
+            </div>
+            <div class="slideShow">
+                <img src="assets\SlideShow\1.jpg" alt="image1" width="100%" height="100%">
+                <p>1/6</p>
+            </div>
+        </div>
+
+
+        <h2>
+            Task 3 : My Own Input
+        </h2>
+        <div class="myOwnInput">
+            <input type="text" id="myInput" placeholder="Enter Only Numbers">
+        </div>
+
+        <h2>
+            Task 4 : Show ASCII Value
+        </h2>
+        <div class="asciiValue">
+            <input type="text" id="asciiInput" placeholder="Enter Only One Character">
+            <span id="asciiValue"></span>
+        </div>
+
+        <h2>
+            Task 5 : prevent context menu
+        </h2>
+        <h2>
+            Task 6 :
+        </h2>
+
+        <div class="marbels">
+            <img src="assets\marbels\marble3.jpg" alt="image1" width="100%" height="100%" id="marble1" class="marble">
+            <img src="assets\marbels\marble1.jpg" alt="image1" width="100%" height="100%" id="marble2" class="marble">
+            <img src="assets\marbels\marble1.jpg" alt="image1" width="100%" height="100%" id="marble3" class="marble">
+            <img src="assets\marbels\marble1.jpg" alt="image1" width="100%" height="100%" id="marble4" class="marble">
+            <img src="assets\marbels\marble1.jpg" alt="image1" width="100%" height="100%" id="marble5" class="marble">
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
