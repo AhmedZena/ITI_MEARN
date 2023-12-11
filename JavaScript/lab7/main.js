@@ -49,7 +49,7 @@ function Shape() {
 
 // Rectangle constructor
 function Rectangle(width, height) {
-  console.log(Rectangle.instance);
+  //   console.log(Rectangle.instance);
   if (Rectangle.instance) {
     throw new Error("Rectangle instance already created.");
   }
@@ -96,7 +96,7 @@ Square.prototype = Object.create(Rectangle.prototype);
 Square.prototype.constructor = Square;
 
 let rect1 = new Rectangle(3, 4);
-// console.log(rect1);
+console.log(rect1);
 
 let rect2 = new Rectangle(10, 20);
 // console.log(rect2);

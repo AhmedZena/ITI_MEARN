@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="https://fav.farm/✅" />
+    </head>
+
+    <body>
+
+        <form class="search-form">
+            <input type="text" class="search" placeholder="City or State">
+            <ul class="suggestions">
+                <li>Filter for a city</li>
+                <li>or a state</li>
+            </ul>
+        </form>
+        <script>
+            const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+            let cities = [];
+
+            // using xhr
+            const xhr = new XMLHttpRequest();
+            xhr.open( 'GET', endpoint );
+            xhr.onload = function () {
+                if ( xhr.status >= 200 && xhr.status < 400 ) {
+                    const data = JSON.parse( xhr.responseText );
+                    cities = data;
+                } else {
+                    console.log( 'error' );
+                }
+            };
+
+            xhr.onerror = function () {
+                console.log( 'error' );
+            };
+
+            xhr.send();
+
+
+            let searchInput = document.querySelector( '.search' );
+
+            let suggestions = document.querySelector( '.suggestions' );
+
+            searchInput.addEventListener( 'keyup', displayMatches );
+
+            let matchArray = [];
+            function displayMatches( e ) {
+                suggestions.innerHTML = '';
+                e.preventDefault();
+                console.log( cities[ 0 ].city );
+                matchArray = cities.filter( place => {
+                    console.log( place );
+                    console.log( e.target.value );
+                    const regex = new RegExp( e.target.value, 'gi' );
+                    return place.city.match( regex ) || place.state.match( regex );
+                } );
+                console.log( matchArray );
+                for ( let i = 0; i < matchArray.length; i++ ) {
+                    let li = document.createElement( 'li' );
+                    li.innerHTML += matchArray[ i ].city + ', ' + matchArray[ i ].state;
+                    suggestions.appendChild( li );
+                }
+            }
+
+
+
+        </script>
+    </body>
+
+</html>
