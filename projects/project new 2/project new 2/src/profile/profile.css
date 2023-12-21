@@ -4,10 +4,10 @@
 * Art by @jofpin 
 * 2014
 */
-:root{
-  --main-color:#515d22;
-  --second-color:#eee8aa;
-  --third-color:#f4d61c;
+:root {
+  --main-color: #515d22;
+  --second-color: #eee8aa;
+  --third-color: #f4d61c;
 }
 body {
   background: var(--second-color);
@@ -294,4 +294,12 @@ a {
 
 .change-password input[type="password"]::placeholder {
   color: #ccc;
+}
+
+.error-oldPassword,
+.error-newPassword,
+.error-confirmPassword,
+.error-pass {
+  color: red;
+  font-size: 12px;
 }
