@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Geo Location</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <nav>
+            <h1>All Tasks</h1>
+            <ul>
+                <li><a href="index.html">Geo Location</a></li>
+                <li><a href="showCircles.html">show Circles</a></li>
+                <li><a href="drawFace.html">Draw Face </a></li>
+            </ul>
+        </nav>
+        <button onclick="getLocation()">Get Location</button>
+        <p id="demo"></p>
+        <script>const x = document.getElementById( "demo" );
+
+            function getLocation() {
+                if ( navigator.geolocation ) {
+                    console.log( "Geolocation is supported by this browser." );
+                    navigator.geolocation.getCurrentPosition( showPosition );
+                    navigator.geolocation.getCurrentPosition( showWindowMap );
+                }
+                else {
+                    console.log( "Geolocation is not supported by this browser." );
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function showPosition( position ) {
+                x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+            }
+
+            function showWindowMap( position ) {
+
+                // open window as a popup and have width and height of 500px
+                const mapWindow = window.open( "https://www.google.com/maps/place/" + position.coords.latitude + "," + position.coords.longitude, "Map", "width=500,height=500" );
+            }
+
+        </script>
+    </body>
+
+</html>

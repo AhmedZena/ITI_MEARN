@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>show Circles</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <nav>
+            <h1>All Tasks</h1>
+            <ul>
+                <li><a href="index.html">Geo Location</a></li>
+                <li><a href="showCircles.html">show Circles</a></li>
+                <li><a href="drawFace.html">Draw Face </a></li>
+            </ul>
+        </nav>
+
+
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <button onclick="interval()">Click</button>
+        <br>
+        <canvas id="myCanvas" width="900" height="1000" style="border:1px solid #000000;"></canvas>
+
+        <script>
+            // circles creagted randomly when the button is clicked but when change color it not affect till i click the button again
+
+            const canvas = document.getElementById( "myCanvas" );
+            const ctx = canvas.getContext( "2d" );
+            //let color = document.getElementById( "favcolor" ).value;
+            var interv;
+            function interval() {
+                color = document.getElementById( "favcolor" ).value;
+                ctx.clearRect( 0, 0, canvas.width, canvas.height );
+                clearInterval( interv );
+                interv = setInterval( function () {
+                    ctx.beginPath();
+                    ctx.arc( Math.floor( Math.random() * 900 ), Math.floor( Math.random() * 1000 ), 50, 0, 2 * Math.PI );
+                    ctx.fillStyle = color;
+                    ctx.fill();
+                    ctx.stroke();
+                }, 1000 );
+            }
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+    </body>
+
+</html>

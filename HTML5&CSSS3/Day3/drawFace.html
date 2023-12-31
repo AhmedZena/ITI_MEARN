@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drawing Face</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <h1>All Tasks</h1>
+            <ul>
+                <li><a href="index.html">Geo Location</a></li>
+                <li><a href="showCircles.html">show Circles</a></li>
+                <li><a href="drawFace.html">Draw Face </a></li>
+            </ul>
+        </nav>
+
+        <!-- - Use SVG, and draw simple face (use circles and ellipses) and handle when 
+mouse over on each part (eyes, mouse, and nose) its background color 
+changes, and back to its original color on mouseover -->
+
+        <svg width="400" height="400">
+            <circle cx="200" cy="200" r="150" stroke="black" stroke-width="3" fill="yellow" />
+            <circle cx="150" cy="150" r="20" stroke="black" stroke-width="3" fill="black" class="circlee" />
+            <circle cx="250" cy="150" r="20" stroke="black" stroke-width="3" fill="black" class="circlee" />
+            <circle cx="200" cy="200" r="10" stroke="black" stroke-width="3" fill="black" class="circlee" />
+            <ellipse cx="200" cy="270" rx="50" ry="30" stroke="black" stroke-width="3" fill="black" />
+        </svg>
+
+        <script>
+            const svg = document.querySelector( "svg" );
+            const circle = document.querySelectorAll( ".circlee" );
+            const ellipse = document.querySelector( "ellipse" );
+            const rect = document.querySelector( "rect" );
+
+            circle.forEach( function ( item ) {
+                item.addEventListener( "mouseover", function () {
+                    item.style.fill = "red";
+                } );
+                item.addEventListener( "mouseout", function () {
+                    item.style.fill = "black";
+                } );
+            } );
+
+            ellipse.addEventListener( "mouseover", function () {
+                ellipse.style.fill = "red";
+            } );
+            ellipse.addEventListener( "mouseout", function () {
+                ellipse.style.fill = "black";
+            } );
+
+
+        </script>
+
+    </body>
+
+</html>

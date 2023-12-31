@@ -1,0 +1,80 @@
+<!-- Basic audio Player 
+
+ Create a webpage with an audio element and implement a basic audio player using HTML5. Add controls such as play, pause, and volume control to the audio player using HTML5 attributes and elements.  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audio Player</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <nav>
+            <h1>All Tasks</h1>
+            <ul>
+                <li><a href="index.html"> Drag and Drop lists</a></li>
+                <li><a href="videoControl.html"> Video Control</a></li>
+                <li><a href="videoBackground.html"> Video Background </a></li>
+                <li><a href="audioPlayer.html">Audio Player</a></li>
+            </ul>
+        </nav>
+        <audio src="dogMusic.mp3" controls></audio>
+
+        <div class="controls">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="stop">Stop</button>
+            <button id="volumeUp">Volume Up</button>
+            <button id="volumeDown">Volume Down</button>
+        </div>
+
+        <script>
+            const audio = document.querySelector( "audio" );
+            const play = document.getElementById( "play" );
+            const pause = document.getElementById( "pause" );
+            const stop = document.getElementById( "stop" );
+            const volumeUp = document.getElementById( "volumeUp" );
+            const volumeDown = document.getElementById( "volumeDown" );
+
+            play.addEventListener( "click", () => {
+                audio.play();
+            } );
+
+            pause.addEventListener( "click", () => {
+                audio.pause();
+            } );
+
+            stop.addEventListener( "click", () => {
+                audio.pause();
+                audio.currentTime = 0;
+            } );
+
+            volumeUp.addEventListener( "click", () => {
+                console.log( audio.volume );
+                if ( audio.volume >= 0.9 ) {
+                    audio.volume = 1;
+                } else {
+                    audio.volume += 0.1;
+                }
+            } );
+
+            volumeDown.addEventListener( "click", () => {
+                console.log( audio.volume );
+                if ( audio.volume <= 0.2 ) {
+                    audio.volume = 0;
+                } else {
+                    audio.volume -= 0.1;
+                }
+            } );
+        </script>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Controls</title>
+        <!-- // font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+
+        <nav>
+            <h1>All Tasks</h1>
+            <ul>
+                <li><a href="index.html">Drag and Drop lists</a></li>
+                <li><a href="videoControl.html">Video Control</a></li>
+                <li><a href="videoBackground.html">Video Background </a></li>
+                <li><a href="audioPlayer.html">Audio Player</a></li>
+            </ul>
+        </nav>
+
+        <h1>Video Player Controls</h1>
+
+        <video src="dog.mp4" id="video" width="500" height="300" controls></video>
+
+        <div id="controls">
+            <button id="play">
+                <i class="fas fa-play"></i>
+                Play</button>
+            <button id="pause">
+                <i class="fas fa-pause"></i>
+                Pause</button>
+            <button id="stop">
+                <i class="fas fa-stop"></i>
+                Stop</button>
+            <button id="volumeUp">
+                <i class="fas fa-volume-up"></i>
+                Volume Up</button>
+            <button id="volumeDown">
+                <i class="fas fa-volume-down"></i>
+                Volume Down</button>
+        </div>
+
+
+        <script>
+            const video = document.getElementById( "video" );
+            const play = document.getElementById( "play" );
+            const pause = document.getElementById( "pause" );
+            const stop = document.getElementById( "stop" );
+            const volumeUp = document.getElementById( "volumeUp" );
+            const volumeDown = document.getElementById( "volumeDown" );
+
+            play.addEventListener( "click", () => {
+                video.play();
+            } );
+
+            pause.addEventListener( "click", () => {
+                video.pause();
+            } );
+
+            stop.addEventListener( "click", () => {
+                video.pause();
+                video.currentTime = 0;
+            } );
+
+            volumeUp.addEventListener( "click", () => {
+                video.volume += 0.1;
+            } );
+
+            volumeDown.addEventListener( "click", () => {
+                console.log( video.volume );
+                video.volume -= 0.1;
+                // if it is 0 i want icon to be mute
+                if ( video.volume <= .1 ) {
+                    video.volume = 0;
+                }
+            } );
+        </script>
+
+
+    </body>
+
+</html>
