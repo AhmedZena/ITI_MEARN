@@ -66,7 +66,7 @@
                 padding: 1% 10%;
                 color: white;
                 margin-top: 20px;
-                height: 450px;
+                height: 500px;
                 margin-bottom: 20px;
             }
 
@@ -95,11 +95,13 @@
                 float: left;
                 margin-top: 20px;
                 margin-right: 5%;
-
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
             }
 
             .languageSkills li {
-                width: 100%;
+                width: 30%;
                 list-style: none;
                 font-size: 20px;
                 margin-bottom: 10px;
@@ -109,13 +111,13 @@
                 position: relative;
             }
 
-            .languageSkills li::after {
-                content: "";
-                background-color: rgb(251, 251, 251);
-                width: 70%;
-                position: absolute;
-                right: 0;
-                height: 100%;
+            progress {
+                width: 60%;
+                height: 50px;
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
             }
 
             .portfolio {
@@ -218,8 +220,8 @@
             }
         </style>
     </head>
-
-    <body>
+    <!-- 
+            <body>
 
         <div class="hero">
             <h1> Ahmed Zena </h1>
@@ -262,7 +264,6 @@
                     <li>UI/UX</li>
                 </ul>
             </div>
-            <!-- <div class="skills"> -->
 
             <ul class="languageSkills">
                 <li>HTML</li>
@@ -271,7 +272,6 @@
                 <li>Node.js</li>
                 <li>React</li>
                 <li>Next.js</li>
-
             </ul>
 
 
@@ -337,6 +337,96 @@
             </div>
         </div>
 
+
+    </body>
+
+</html>
+
+ -->
+
+    <!-- semantic -->
+
+    <!-- <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+  
+    </head> -->
+
+    <body>
+
+        <header class="hero">
+            <h1> Ahmed Zena </h1>
+            <h2>Full Stack Developer</h2>
+            <button>Contact Me</button>
+        </header>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <article>
+                <p>I am a full stack developer with a passion for learning and teaching. I have a background in computer
+                    science and I am currently working as a freelance developer...</p>
+                <button>Download CV</button>
+            </article>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <p>I have experience in developing web applications using HTML, CSS, JavaScript, PHP, and MySQL...</p>
+            <aside class="focus">
+                <h3>My Focus</h3>
+                <hr class="line">
+                <ul>
+                    <li>Web Development</li>
+                    <li>Web Design</li>
+                    <li>UI/UX</li>
+                </ul>
+            </aside>
+            <h3>Technical Skills</h3>
+            <aside class="language-skills">
+                <ul class="languageSkills">
+                    <li>HTML</li> <progress value="90" max="100"></progress>
+                    <li>CSS</li> <progress value="80" max="100"></progress>
+                    <li>JavaScript</li> <progress value="70" max="100"></progress>
+                    <li>Node.js</li> <progress value="60" max="100"></progress>
+                    <li>React</li> <progress value="50" max="100"></progress>
+                    <li>Next.js</li> <progress value="40" max="100"></progress>
+
+                </ul>
+            </aside>
+        </section>
+
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div>
+                <div class=" first">
+                    <h3>Web Design</h3>
+                    <hr class="underLine">
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footerLeft">
+                <h2>Get in Touch</h2>
+                <div>
+                    <img src="pics/icons8-message-48.png" alt="">
+                    <p>ahmedzena53@gmail.com</p>
+                </div>
+                <!-- More contact info here -->
+            </div>
+            <button class="btn">Contact Me</button>
+            <div class="footerRight">
+                <img src="pics/icons8-linked-in-48.png" alt="">
+                <img src="pics/icons8-facebook-48.png" alt="">
+                <img src="pics/icons8-twitter-48.png" alt="">
+                <p> &copy; 2023 Ahmed Zena</p>
+            </div>
+        </footer>
 
     </body>
 
