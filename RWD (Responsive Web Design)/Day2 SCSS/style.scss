@@ -1,0 +1,353 @@
+/*
+
+        <div class="gridLayout ">
+            <div class="header col-16">
+                <div class="header__image">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="header__text">
+                    <h1>Ahmed Gamal Zena</h1>
+                    <p>Full Stack Developer</p>
+                </div>
+            </div>
+
+            <div class="simpleDesc">
+                <p> I am a full stack developer JavaScript</p>
+            </div>
+
+
+            <div class="descriptionAboutMe">
+                <p>
+                    I am ahmed zena and i am full stack developer and i love to learn new things and i am a hard worker
+                    I am from Egypt and i am 23 years old
+
+                </p>
+            </div>
+
+            <div class="education">
+                <h2>Education</h2>
+                <div class="education__items">
+                    <div class="education__item">
+                        <p>secondary school</p>
+                        <h3>2016 -2018 </h3>
+                    </div>
+                    <div class="education__item">
+                        <hr>
+                    </div>
+                    <div class="education__item">
+                        <p>Faculty of computer Engineering</p>
+                        <h3>2019 - 2023 </h3>
+                    </div>
+                    <div class="education__item">
+                        <hr>
+                    </div>
+                    <div class="education__item">
+                        <p> National Telecommunication Institute</p>
+                        <h3>2022 - 2023 </h3>
+                    </div>
+                    <div class="education__item">
+                        <hr>
+                    </div>
+                    <div class="education__item">
+                        <p> National Telecommunication Institute</p>
+                        <h3>2023 - present </h3>
+                    </div>
+                    <div class="education__item">
+                        <hr>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="achievment">
+
+                <div class="achievment__item">
+                    <p> I made a website for a client and he was very happy with it</p>
+                </div>
+                <div class="achievment__item">
+                    <p> I made a website for a client and he was very happy with it</p>
+                </div>
+                <div class="achievment__item">
+                    <p> I made a website for a client and he was very happy with it</p>
+                </div>
+            </div>
+
+            <div class="work-experience">
+                <h2>Work Experience</h2>
+                <div class="work-experience__items">
+                    <div class="work-experience__item">
+                        <p> Microsoft company </p>
+                        <h2> WorkPlace</h2>
+                        <h3>2019 - 2020 </h3>
+                    </div>
+                    <div class="work-experience__item">
+                        <p> Google company </p>
+                        <h2> WorkPlace</h2>
+                        <h3>2020 - 2021 </h3>
+                    </div>
+                    <div class="work-experience__item">
+                        <p> Facebook company </p>
+                        <h2> WorkPlace</h2>
+                        <h3>2021 - 2022 </h3>
+                    </div>
+                    <div class="work-experience__item">
+                        <p> Amazon company </p>
+                        <h2> WorkPlace</h2>
+                        <h3>2022 - 2023 </h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <footer>
+                <!-- 4 divs  -->
+                <!--  one for contact  -->
+                <div class="contact">
+                    <h2>Contact</h2>
+
+                    <ul>
+                        <!--  home adress , phone , website , mail -->
+                        <li> <i class="fas fa-home"></i> 6th of October </li>
+                        <li> <i class="fas fa-phone"></i> 01000000000 </li>
+                        <li> <i class="fas fa-globe"></i> www.ahmedzena.com </li>
+                        <li> <i class="fas fa-envelope"></i>
+                    </ul>
+
+                </div>
+
+                <!--  one for languages  -->
+                <div class="languages">
+                    <h2>Languages</h2>
+
+                    <div class="slider">
+                        <div class="slider__item">
+                            <p>Arabic</p>
+                            <div class="slider__item__progress">
+                                <div class="slider__item__progress__bar"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <p>English</p>
+                            <div class="slider__item__progress">
+                                <div class="slider__item__progress__bar"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <p>French</p>
+                            <div class="slider__item__progress">
+                                <div class="slider__item__progress__bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--  one for skills  -->
+                <div class="skills">
+                    <h2>Skills</h2>
+
+                    <div class="slider">
+                        <div class="slider__item">
+                            <p>HTML</p>
+                            <div class="slider__item__progress">
+                                <div class="slider__item__progress__bar"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <p>CSS</p>
+                            <div class="slider__item__progress">
+                                <div class="slider__item__progress__bar"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <p>JavaScript</p>
+                            <div class="slider__item__progress">
+                                <div class="slider__item__progress__bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="slider__item">
+                            <p>MySQL</p>
+                            <div class="slider__item__progress">
+                                <div class="slider__item__progress__bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--  one for hobbies  -->
+                <div class="hobbies">
+                    <h2>Hobbies</h2>
+                    <ul>
+                    <li> <i class="fas fa-running"></i> Running </li>
+                    <li> <i class="fas fa-swimmer"></i> Swimming </li>
+                    <li> <i class="fas fa-book"></i> Reading </li>
+                    <li> <i class="fas fa-gamepad"></i> Playing </li>
+                    </ul>
+                    </div>
+                    </footer>
+                    </div>
+                    */
+
+
+// @function funcName(argu){}
+
+$total:16;
+
+$workPlaceColor:rgb(182, 182, 11);
+
+// 1/16
+@function calcColWidth($col) {
+    @return percentage($col/$total);
+
+}
+
+@for $i from 1 through $total {
+    .col-#{$i} {
+        width: calcColWidth($i);
+    }
+}
+
+
+// shared mixin that sent to it color and it will return the color and the background color
+@mixin bgColor($color) {
+    background-color: $color;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gridLayout {
+    display: row;
+    // grid-template-columns: repeat($total, 1fr);
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header__image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 20px;
+
+            .avatar {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .education {
+
+        h2 {
+            @include bgColor(blue);
+        }
+
+        .education__items {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .education__item {
+                display: flex;
+                flex-direction: column;
+
+
+
+            }
+
+            //  even nums of education__item
+            .education__item:nth-child(even) {
+                display: flex;
+                position: relative;
+
+                hr {
+                    width: 100%;
+                    height: 2px;
+                    background-color: black;
+
+                }
+            }
+
+        }
+
+    }
+
+
+    .achievment {
+
+        // direct h2
+        &>h2 {
+            @include bgColor(green);
+        }
+
+        .achievment-items {
+            display: flex;
+            flex-direction: row;
+
+            .achievment-item {
+                width: 100%;
+                height: 100px;
+                background-color: #ccc;
+                margin: 10px;
+
+                p {
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+
+
+        }
+
+
+    }
+
+
+    .work-experience {
+
+        &>h2 {
+            @include bgColor(red);
+        }
+
+        .work-experience-items {
+            display: flex;
+
+            .work-experience-item {
+                display: flex;
+                flex-direction: column;
+
+                // justify-content: center;
+                // align-items: center;
+                // margin: 2px;
+                .workplace {
+                    color: $workPlaceColor;
+                }
+            }
+        }
+    }
+
+
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ccc;
+    }
+}

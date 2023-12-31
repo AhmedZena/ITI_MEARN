@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+
+
+        <style>
+            .pagination>li>a {
+                color: black;
+                background-color: white;
+            }
+
+            .pagination>li>a:focus,
+            .pagination>li>a:hover {
+                background-color: black;
+                color: white;
+            }
+
+            .pagination li a.active {
+                border: 1px solid black;
+                background-color: black;
+                color: white;
+            }
+
+            .container {
+                margin-top: 100px;
+            }
+        </style>
+    </head>
+
+
+
+    <body>
+
+        <!-- https://www.w3schools.com/w3css/tryw3css_templates_food_blog.htm -->
+
+        <!--  i will make that webstie by bootstrap  -->
+
+        <!-- 1- header  -->
+        <!-- 2- nav bar  -->
+
+        <div class="pos-f-t fixed-top">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark p-1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1 class="text-white">Food Blog</h1>
+                <h5 class="text-white">Ahmed zena</h5>
+
+            </nav>
+        </div>
+        <!-- 3- content : have 4 divs in the column and every div have pic and header and p -->
+
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim
+                keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </div>
+
+
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="food1" class="img-fluid">
+                    <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                    <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                    </p>
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="https://www.w3schools.com/w3images/steak.jpg" alt="food2" class="img-fluid">
+                    <h3>Let Me Tell You About This Steak
+                    </h3>
+                    <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum
+                        lipsum.
+                    </p>
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="food3" class="img-fluid">
+                    <h3>Cherries, interrupted
+                    </h3>
+                    <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+
+                    <p>What else?</p>
+
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="https://www.w3schools.com/w3images/wine.jpg" alt="food4" class="img-fluid">
+                    <h3>Once Again, Robust Wine and Vegetable Pasta
+                    </h3>
+                    <p>Lorem ipsum text praesent tincidunt ipsum lipsum.
+                    </p>
+                </div>
+            </div>
+
+            <!-- another row  -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="food5" class="img-fluid">
+                    <h3>All I Need Is a Popsicle
+                    </h3>
+                    <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="food6" class="img-fluid">
+                    <h3>Salmon For Your Skin
+                    </h3>
+                    <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                    </p>
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="food7" class="img-fluid">
+                    <h3>The Perfect Sandwich, A Real Classic
+                    </h3>
+                    <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                    </p>
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="food8" class="img-fluid">
+                    <h3>Le French
+                    </h3>
+                    <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+
+            </div>
+
+
+            <!-- pagation numbers  -->
+            <nav aria-label="Page navigation example">
+                <!-- <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link  text-dark" href="#">1</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul> -->
+                <ul class="pagination justify-content-center gap-1">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <!-- for hr -->
+
+            <hr class="m-5">
+
+            <!-- About Me, The Food Man : title , photo under it title , sub title , and p -->
+            <!-- make container in center  -->
+            <div class="container text-center">
+                <h2> About Me, The Food Man</h2>
+                <div class="row text-center justify-content-center ">
+                    <div class="col-10">
+                        <img src="https://www.w3schools.com/w3images/chef.jpg" alt="food9" class="img-fluid">
+                        <h4 class="mt-5">I am Who I Am!</h4>
+                        <!-- <h5>With Passion For Real, Good Food</h5> -->
+                        <p class="fst-italic">With Passion For Real, Good Food</p>
+                        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an
+                            interest of lorem ipsum and
+                            mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut
+                            rutrum. Sed vitae justo
+                            condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent
+                            tincidunt
+                            sed tellus ut rutrum.
+                            Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+                            fringilla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <hr class="m-5">
+        <!-- footer with 3 sections : 
+            first section have headre , p , and span with a : FOOTER
+Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+Powered by w3.css
+
+            second section have header and two options to select and every option have pic , header , and p
+
+            third section have header and some tags active 
+        -->
+
+        <footer class="row text-center bg-dark text-white m-1">
+            <div class=" col-12 col-sm-4 ">
+                <h3>Footer</h3>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                    ultricies congue gravida diam non fringilla.</p>
+                <p class="text-center">Powered <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+                        target="_blank" class="text-white">w3.css</a></p>
+            </div>
+
+            <div class=" col-12 col-sm-4 justify-content-center">
+                <h3>Blog Posts</h3>
+                <div class="">
+                    <!--  the two options under each others -->
+                    <div class="row  ">
+                        <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="food10"
+                            class="img-fluid col-6 w-25">
+                        <p class="col-6">The Perfect Sandwich, A Real NYC Classic</s>
+                    </div>
+                    <!--  the two options under each others -->
+                    <div class="row ">
+                        <img src="https://www.w3schools.com/w3images/steak.jpg" alt="food11"
+                            class="img-fluid col-6 w-25">
+                        <p class="col-6">Let Me Tell You About This Steak</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- POPULAR TAGS
+Travel New York Dinner Salmon France Drinks Ideas Flavors Cuisine Chicken Dressing Fried Fish Duck -->
+
+            <!-- one button and most badges under it -->
+            <div class=" col-12 col-sm-4 justify-content-center">
+                <h3>Popular Tags</h3>
+                <div class="">
+
+                    <span class="badge bg-secondary">Travel</span>
+                    <span class="badge bg-secondary">New York</span>
+                    <span class="badge bg-secondary">Dinner</span>
+                    <span class="badge bg-secondary">Salmon</span>
+                    <span class="badge bg-secondary">France</span>
+                    <span class="badge bg-secondary">Drinks</span>
+                    <span class="badge bg-secondary">Ideas</span>
+                    <span class="badge bg-secondary">Flavors</span>
+                    <span class="badge bg-secondary">Cuisine</span>
+                    <span class="badge bg-secondary">Chicken</span>
+                    <span class="badge bg-secondary">Dressing</span>
+                    <span class="badge bg-secondary">Fried</span>
+                    <span class="badge bg-secondary">Fish</span>
+                    <span class="badge bg-secondary">Duck</span>
+
+                </div>
+            </div>
+
+
+
+        </footer>
+
+
+
+        <script src="./bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
